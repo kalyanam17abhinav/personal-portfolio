@@ -1,0 +1,38 @@
+.intro-description {
+    font-family: 'DM Serif Display', serif;
+  }  
+
+@keyframes menuOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.animate-menuOpen{
+    animation: menuOpen 1s linear forwards
+}
+
+@keyframes introImage {
+    from {
+        left: 432px;
+        opacity: 0;
+    }
+    to{
+        left: 0px;
+        opacity: 100;
+    }
+}
+
+.animate-introImage{
+    animation : introImage 1.5s ease-in forwards;
+}
+
+@font-face {
+    font-family: 'QuicksandLight';
+    src: url('/fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
