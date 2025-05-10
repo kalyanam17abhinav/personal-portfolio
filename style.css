@@ -16,18 +16,30 @@
 }
 
 @keyframes introImage {
-    from {
-        left: 432px;
+    0% {
+        transform: translateX(432px);
         opacity: 0;
     }
-    to{
-        left: 0px;
-        opacity: 100;
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
 .animate-introImage{
     animation : introImage 1.5s ease-in forwards;
+}
+
+@keyframes introDescription {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animate-introDescription{
+    animation: introDescription 1s ease-in forwards;
 }
 
 @font-face {
