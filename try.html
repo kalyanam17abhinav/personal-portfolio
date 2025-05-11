@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Parent</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    .parent {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: rotate 5s linear infinite;
+      margin: 100px auto;
+    }
+
+    .child {
+      width: 50px;
+      height: 50px;
+      background-color: darkblue;
+      animation: counter-rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes counter-rotate {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="w-64 h-64 bg-[#33b59f] rounded-full flex items-center justify-center text-center p-6 overflow-hidden">
+    <p class="text-white text-lg leading-snug">
+      This is a circular area with text that wraps neatly and fills the space without overflowing. The content stays within the rounded edges.
+      This is a circular area with text that wraps neatly and fills the space without overflowing. The content stays within the rounded edges.
+    </p>
+  </div>
+  
+</body>
+</html>

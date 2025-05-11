@@ -1,4 +1,8 @@
-.intro-description {
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.intro-description, .about-text {
     font-family: 'DM Serif Display', serif;
   }  
 
@@ -18,6 +22,8 @@
 @keyframes introImage {
     0% {
         transform: translateX(432px);
+    }
+    50%{
         opacity: 0;
     }
     100% {
@@ -48,3 +54,4 @@
     font-weight: 300;
     font-style: normal;
   }
+

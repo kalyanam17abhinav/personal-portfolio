@@ -15,3 +15,4 @@ menuBtn2.addEventListener('click', () => {
     menuOpen.classList.add('hidden');
     menuBtn.classList.remove('hidden');
 });
+
