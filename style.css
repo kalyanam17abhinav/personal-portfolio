@@ -1,21 +1,25 @@
-body::-webkit-scrollbar {
+body::-webkit-scrollbar:horizontal {
     display: none;
-  }
+}
 
-.intro-description, .about-text {
+.intro-description,
+.about-text,
+.project-title,
+.project {
     font-family: 'DM Serif Display', serif;
-  }  
+}
 
 @keyframes menuOpen {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 100;
     }
 }
 
-.animate-menuOpen{
+.animate-menuOpen {
     animation: menuOpen 1s linear forwards
 }
 
@@ -23,28 +27,32 @@ body::-webkit-scrollbar {
     0% {
         transform: translateX(432px);
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-.animate-introImage{
-    animation : introImage 1.5s ease-in forwards;
+.animate-introImage {
+    animation: introImage 1.5s ease-in forwards;
 }
 
 @keyframes introDescription {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-.animate-introDescription{
+
+.animate-introDescription {
     animation: introDescription 1s ease-in forwards;
 }
 
@@ -53,5 +61,25 @@ body::-webkit-scrollbar {
     src: url('/fonts/Quicksand-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
-  }
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes projectsHeading {
+    0% {
+        transform: translateY(40px);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-projectsHeading {
+    animation: projectsHeading 1s ease-in forwards;
+}

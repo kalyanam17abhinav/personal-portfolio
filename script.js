@@ -16,3 +16,23 @@ menuBtn2.addEventListener('click', () => {
     menuBtn.classList.remove('hidden');
 });
 
+document.querySelector('#scroll-top')
+.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            entry.target.classList.remove('translate-x-225');
+            entry.target.classList.remove('-translate-x-225');
+        }
+    });
+}, {
+    threshold: 1
+});
+
+document.querySelectorAll('[data-animate]').forEach(el => {
+    observer.observe(el);
+});

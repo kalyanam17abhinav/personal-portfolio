@@ -15,20 +15,22 @@
 
 <body class=" z-10">
 
-    <nav class="navbar h-16 w-screen p-8 flex space-x-2 text-[#333333] font-thin justify-between items-center relative">
+    <nav class="navbar h-16 w-screen p-8 flex space-x-2 text-[#333333] font-thin justify-between items-center fixed top-0 left-0 z-50 bg-white">
         <div class="heading w-1/3 flex space-x-2 items-center cursor-pointer">
-            <div class="name font-[Playfair Display] font-black text-4xl hidden md:block">kalyanam abhinav</div>
             <!-- text-[#10B981] -->
+            <a href="/" id="scroll-top">
+            <div class="name font-[Playfair Display] font-black text-4xl hidden md:block">kalyanam abhinav</div>
+            </a>
             <div class="logo bg-[url(ka.png)] bg-contain h-7 w-7 rounded-lg block md:hidden">
                 <img src="assets/ka.png" class="w-full h-full">
             </div>
         </div>
     
         <div class="menu md:flex md:justify-around md:h-full md:w-md md:items-center md:ml-96 hidden md:block text-2xl">
-            <a href="" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">about</a>
-            <a href="" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">projects</a>
-            <a href="" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">skills</a>
-            <a href="" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">contact</a>
+            <a href="#about" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">about</a>
+            <a href="#projects" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">projects</a>
+            <a href="#skills" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">skills</a>
+            <a href="#contact" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2">contact</a>
         </div>
 
         <div class="menu-open h-40 w-30 border border-[#333333] bg-white text-[#333333] absolute top-18 right-0 flex flex-col space-y-4 justify-center items-center opacity-0 animate-menuOpen hidden">
@@ -46,7 +48,7 @@
             <img src="assets/menu2.png" class="ml-8 h-8 w-8">
         </div>
     
-        <a href="" class="cursor-pointer bg-pink-500 h-8 w-auto p-2 flex justify-center items-center rounded-lg hover:bg-pink-700 font-semibold text-white">Resume</a>
+        <a href="" class="cursor-pointer bg-pink-500 h-8 w-auto p-2 flex justify-center items-center rounded-lg hover:bg-pink-700 font-semibold text-white mr-8">Resume</a>
     </nav>
 
     <div class="blue-circle w-96 h-96 md:w-196 md:h-196 bg-[#6C63FF] shadow-[0_40px_120px] shadow-[#6C63FF] rounded-full absolute top-60 -left-40 md:-left-70 md:top-70 z-5"></div>
@@ -54,32 +56,245 @@
 
 
     <!-- INRODUCTION -->
-    <div class="intro h-96 w-[85%] flex justify-between mt-36 mx-auto relative border-b z-10 hover:shadow-xl hover:shadow-black-500/50">
-        <div class="intro-image h-96 w-96 z-10 absolute opacity-0 animate-introImage">
-            <img src="assets/abhi.png" class="h-full w-full">
-        </div> 
-
-        <div class="intro-divider h-96 w-0 border-2 z-10 absolute left-108"></div>
-        
-        <div class="intro-description h-96 w-196 z-10 absolute text-3xl left-130 opacity-0 animate-introDescription">
-            Hi, I'm <span class="text-pink-500 text-4xl">Abhinav</span> — a passionate Frontend Developer with a strong interest in Machine Learning and intelligent web experiences.<br>I specialize in building responsive, user-friendly interfaces.<br>I'm also exploring how machine learning can enhance modern web applications — from real-time predictions to smart data visualizations.<br>Currently looking for opportunities where I can contribute, grow, and work with modern technologies in a fast-paced environment.
+    <section id="home">
+        <div class="intro h-96 w-[85%] flex justify-between mt-50 mx-auto relative border-b z-10 hover:shadow-xl hover:shadow-black-500/50">
+            <div class="intro-image h-96 w-96 z-10 absolute opacity-0 animate-introImage">
+                <img src="assets/abhi.png" class="h-full w-full">
+            </div> 
+    
+            <div class="intro-divider h-96 w-0 border-2 z-10 absolute left-108"></div>
+            
+            <div class="intro-description h-96 w-196 z-10 absolute text-3xl left-130 opacity-0 animate-introDescription">
+                Hi, I'm <span class="text-pink-500 text-4xl">Abhinav</span> — a passionate Frontend Developer with a strong interest in Machine Learning and intelligent web experiences.<br>I specialize in building responsive, user-friendly interfaces.<br>I'm also exploring how machine learning can enhance modern web applications — from real-time predictions to smart data visualizations.<br>Currently looking for opportunities where I can contribute, grow, and work with modern technologies in a fast-paced environment.
+            </div>
         </div>
-    </div>
+    </section>
     
     <!-- ABOUT -->
-    <div class="about h-128 w-[928px] mt-48 bg-[#33b59f] shadow-[0_10px_30px] shadow-[#33b59f] rounded-full absolute right-20 flex items-center">
-        <div class="about-heading h-18 w-56 p-2 mx-4 text-4xl font-thin bg-white border rounded-full left-4 flex items-center justify-center">About me</div>
-        <div class="about-text text-[1.55rem] h-full w-[618px] mt-16">
-            <div class="text-left">I'm someone who learns by doing — breaking</div>
-            <div class="w-[660px]"> things, fixing them, and learning fast along the way. <br>My journey into <span class="underline decoration-white underline-offset-4">Frontend Development</span> and <span class="underline decoration-white underline-offset-4">Machine Learning</span> started out of pure curiosity, and it quickly turned</div>
-            <div class="w-[680px]"> into a full-on obsession with building things that both look great and make sense.<br> Whether it's a clean UI or a smart model running under the hood,  I care about the <span class="text-white">WHY</span> behind the code as much as the <span class="text-white">HOW</span>.</div>
-            <div class="w-[700px]"> Right now, I'm actively looking for roles where I can keep learning, build meaningful products, and be part of a</div>
-            <div class="w-[660px]"> team that values  both  innovation and simplicity.</div>
-        </div>
+    <div class="grid justify-items-end pr-20">
+        <secion id="about">
+            <div class="about h-128 w-[928px] mt-48 bg-[#33b59f] shadow-[0_10px_30px] shadow-[#33b59f] rounded-full right-20 flex items-center">
+                <div class="about-heading h-18 w-56 p-2 mx-4 text-4xl font-thin bg-white border rounded-full left-4 flex items-center justify-center">ABOUT ME</div>
+                <div class="about-text text-[1.55rem] h-full w-[618px] mt-16">
+                    <div class="text-left">I'm someone who learns by doing — breaking</div>
+                    <div class="w-[660px]"> things, fixing them, and learning fast along the way. <br>My journey into <span class="underline decoration-white underline-offset-4">Frontend Development</span> and <span class="underline decoration-white underline-offset-4">Machine Learning</span> started out of pure curiosity, and it quickly turned</div>
+                    <div class="w-[680px]"> into a full-on obsession with building things that both look great and make sense.<br> Whether it's a clean UI or a smart model running under the hood, I care about the <span class="text-white">WHY</span> behind the code as much as the <span class="text-white">HOW</span>.</div>
+                    <div class="w-[700px]"> Right now, I'm actively looking for roles where I can keep learning, build meaningful products, and be part of a</div>
+                    <div class="w-[660px]"> team that values both innovation and simplicity.</div>
+                </div>
+            </div>
+        </secion>
     </div>
     
 
-    <script src="script.js"></script>
+    <!-- PROJECTS -->
+    <section id="projects" class="scroll-mt-20">
+        <div class="projects h-296 w-4/5 border-t border-b mt-24 mx-auto shadow-xl shadow-black-500">
+            
+            <div class="projects-heading text-5xl font-thin w-64 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>PROJECTS</div>
+            
+            <div class="projects-all h-[90%] mt-4 h-auto">
+                
+                <!-- project-1 -->
+                <div class="project w-2/3 h-84 flex bg-[#FFD93D] rounded-r-full mb-12">
+                    <div class="project-image w-1/3 h-full border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
+                        <img src="assets/brain-cnn.png" class="w-full ">
+                    </div>
+                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
+                        <div class="project-title text-3xl ">Brain-Tumor-Detection-using-CNN</div>
+                        <div class="project-description text-lg my-2 text-justify">This project detects brain tumors using deep learning with convolutional neural networks (CNNs). It involves data preprocessing, model training, evaluation, and prediction on custom MRI images. The system aims to classify MRI scans into tumor and non-tumor categories with high accuracy.
+                        </div>
+                        <div class="project-tech-stack text-lg my-4">
+                            <span class="bg-white p-2 rounded-full">Python</span>
+                            <span class="bg-white p-2 rounded-full">Tensorflow</span>
+                            <span class="bg-white p-2 rounded-full">Scikit-learn</span>
+                        </div>
+                        <div class="project-github-link">
+                            <a href="https://github.com/kalyanam17abhinav/Brain-Tumor-Detection-using-CNN" target="_blank">
+                                <img src="assets/github.png" class="h-8 w-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project-2 -->
+                <div class="project w-2/3 border border-yellow-500 h-84 flex justify-end bg-[#FFD93D] rounded-l-full mb-12 ml-auto">
+                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
+                        <div class="project-title text-3xl">AudioFakeNet</div>
+                        <div class="project-description text-lg my-2 text-justify">This project uses a CNN to classify speech as bonafide or spoofed based on Mel spectrograms. It processes audio data and trains a deep learning model for detecting audio deepfakes from the ASVspoof 2019 dataset.
+                        </div>
+                        <div class="project-tech-stack text-lg my-4">
+                            <span class="bg-white p-2 rounded-full">Tensorflow</span>
+                            <span class="bg-white p-2 rounded-full">Librosa</span>
+                            <span class="bg-white p-2 rounded-full">Matplotlib</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="project-github-link">
+                                <a href="https://github.com/kalyanam17abhinav/AudioFakeNet/tree/master" target="_blank">
+                                    <img src="assets/github.png" class="h-8 w-8">
+                                </a>
+                            </div>
+                            <div class="project-app-link">
+                                <a href="https://audiofakenetapp.streamlit.app/" target="_blank">
+                                    <img src="assets/rocket.png" class="h-8 w-8">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-image w-1/3 h-full border-l flex items-center bg-white -translate-x-225 translate-all duration-900" data-animate>
+                        <img src="assets/audio.png" class="w-full ">
+                    </div>
+                </div>
+
+                <!-- project-3 -->
+                <div class="project w-2/3 h-84 flex bg-[#FFD93D] rounded-r-full mb-12">
+                    <div class="project-image w-1/3 h-full border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
+                        <img src="assets/spotify.png" class="w-full ">
+                    </div>
+                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
+                        <div class="project-title text-3xl ">Spotify-Clone</div>
+                        <div class="project-description text-lg my-2 text-justify">A fully responsive Spotify UI clone built with HTML, Tailwind CSS, and JavaScript, replicating key elements like playlists, navigation, and player controls for both desktop and mobile, focusing on clean layout, smooth transitions, and visual accuracy to enhance frontend skills.
+                        </div>
+                        <div class="project-tech-stack text-lg my-4">
+                            <span class="bg-white p-2 rounded-full">JavaScript</span>
+                            <span class="bg-white p-2 rounded-full">Tailwind CSS</span>
+                            <span class="bg-white p-2 rounded-full">HTML</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="project-github-link">
+                                <a href="https://github.com/kalyanam17abhinav/spotify-clone" target="_blank">
+                                    <img src="assets/github.png" class="h-8 w-8">
+                                </a>
+                            </div>
+                            <div class="project-app-link">
+                                <a href="https://kalyanam17abhinav.github.io/spotify-clone/main.html" target="_blank">
+                                    <img src="assets/rocket.png" class="h-8 w-8">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project-4 -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="scroll-mt-20">
+        <div class="skills h-128 w-4/5 mt-24 mx-auto">
+            <div class="skills-heading text-5xl font-thin w-64 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>SKILLS</div>
+
+            <div class="skill-set h-3/4 w-3/4 mt-12 mx-auto grid grid-cols-5 gap-x-2 gap-y-4">
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/html-5.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/javascript.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/tailwind.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/python.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/c++.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/mysql.svg" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/scikit-learn.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/tensorflow.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/numpy.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/github.png" class="h-24 w-24">
+                    </div>
+                </div>
+                
+                <!-- <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/html-5.png" class="h-24 w-24">
+                    </div>
+                </div>
+                <div class="h-32 w-32 mx-auto">
+                    <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
+                        <img src="assets/html-5.png" class="h-24 w-24">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="scroll-mt-20">
+        <div class="contact h-128 w-348 border-t mx-auto flex justify-center items-center">
+            <div class="contact-links h-96 w-96 rounded-full flex justify-center items-center mr-32 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb]">
+                <div class="contact-heading text-5xl font-thin h-12 pl-28 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>CONTACT</div>
+                <a href="https://www.linkedin.com/in/kalyanam-abhinav-642194274/" target="_blank">
+                    <div class="contact-linkedin h-18 w-18 rounded-full relative bottom-26 left-34 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                        <img src="assets/linkedin.png" class="h-12 w-12">
+                    </div>
+                </a>
+                <a href="https://github.com/kalyanam17abhinav" target="_blank">
+                    <div class="contact-linkedin h-18 w-18 rounded-full relative left-24 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                        <img src="assets/github.png" class="h-12 w-12">
+                    </div>
+                </a>
+                <a href="mailto:robert7grey@gmail.com" target="_blank">
+                    <div class="contact-email h-18 w-18 rounded-full relative top-26 -left-2 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                        <img src="assets/email.png" class="h-12 w-12">
+                    </div>
+                </a>
+                
+            </div>
+            <div class="contact-form border-l h-128 w-220">
+                <div class="contact-lets-connect-title h-12 w-full pl-12 text-2xl font-semibold ">let's connect</div>
+                <div class="contact-name h-12 w-1/2 pl-12 my-8 font-thin text-xl">
+                    Name: <input type="text" id="name" class="border-b focus:outline-none ml-4 pl-2">
+                </div>
+                <div class="contact-email h-12 w-2/3 pl-12 my-8 font-thin text-xl">
+                    Email: <input type="email" id="email" class="border-b focus:outline-none focus:ring-0 ml-4 pl-2">
+                </div>
+
+                <div class="contact-message h-12 w-2/3 pl-12 font-thin text-xl">
+                    Message: <textarea id="message" rows="5" class="w-full p-4 border rounded resize-none focus:outline-none" wrap="soft"></textarea>
+                </div>
+                
+                <div class="contact-submit h-12 w-2/3 pl-12 my-8 relative top-34">
+                    <button class="h-12 w-18 bg-[#00C9A7] rounded-xl text-2xl font-thin right-0 hover:font-semibold cursor-pointer">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <script src="script.js"></script>
 </body>
 
 </html>
