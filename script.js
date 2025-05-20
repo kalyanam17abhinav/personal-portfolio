@@ -26,7 +26,8 @@ const observer = new IntersectionObserver((entries) => {
         if(entry.isIntersecting) {
             entry.target.classList.remove('opacity-0', 'translate-y-10');
             entry.target.classList.remove('translate-x-225');
-            entry.target.classList.remove('-translate-x-225');
+            // entry.target.classList.remove('-translate-x-225');
+            entry.target.classList.remove('md:-translate-x-225');
         }
     });
 }, {

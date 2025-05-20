@@ -20,10 +20,11 @@
             <!-- text-[#10B981] -->
             <a href="/" id="scroll-top">
             <div class="name font-[Playfair Display] font-black text-4xl hidden md:block">kalyanam abhinav</div>
-            </a>
             <div class="logo bg-[url(ka.png)] bg-contain h-7 w-7 rounded-lg block md:hidden">
                 <img src="assets/ka.png" class="w-full h-full">
             </div>
+            </a>
+            
         </div>
     
         <div class="menu md:flex md:justify-around md:h-full md:w-md md:items-center md:ml-96 hidden md:block text-2xl">
@@ -34,10 +35,10 @@
         </div>
 
         <div class="menu-open h-40 w-30 border border-[#333333] bg-white text-[#333333] absolute top-18 right-0 flex flex-col space-y-4 justify-center items-center opacity-0 animate-menuOpen hidden">
-            <a href="" class="cursor-pointer underline underline-offset-4 decoration-1">about</a>
-            <a href="" class="cursor-pointer underline underline-offset-4 decoration-1">projects</a>
-            <a href="" class="cursor-pointer underline underline-offset-4 decoration-1">skills</a>
-            <a href="" class="cursor-pointer underline underline-offset-4 decoration-1">contact</a>
+            <a href="#about" class="cursor-pointer underline underline-offset-4 decoration-1">about</a>
+            <a href="#projects" class="cursor-pointer underline underline-offset-4 decoration-1">projects</a>
+            <a href="#skills" class="cursor-pointer underline underline-offset-4 decoration-1">skills</a>
+            <a href="#contact" class="cursor-pointer underline underline-offset-4 decoration-1">contact</a>
         </div>
     
         <div href="" class="menu-button cursor-pointer hover:underline hover:decoration-2 ml-24 md:hidden">
@@ -48,39 +49,42 @@
             <img src="assets/menu2.png" class="ml-8 h-8 w-8">
         </div>
     
-        <a href="" class="cursor-pointer bg-pink-500 h-8 w-auto p-2 flex justify-center items-center rounded-lg hover:bg-pink-700 font-semibold text-white mr-8">Resume</a>
+        <a href="https://drive.google.com/file/d/1EB7HgHkF9dTx13Gh1gOUFN_Wb6QoWIDu/view?usp=sharing" target="_blank" class="cursor-pointer bg-pink-500 h-8 w-auto p-2 flex justify-center items-center rounded-lg hover:bg-pink-700 font-semibold text-white md:mr-8">Resume</a>
     </nav>
 
     <div class="blue-circle w-96 h-96 md:w-196 md:h-196 bg-[#6C63FF] shadow-[0_40px_120px] shadow-[#6C63FF] rounded-full absolute top-60 -left-40 md:-left-70 md:top-70 z-5"></div>
-    <div class="red-circle w-48 h-48 md:w-96 md:h-96 bg-[#FF6B6B] shadow-[0_40px_120px] shadow-[#FF6B6B] rounded-full absolute top-30 right-10 md:right-50 md:top-40 z-5"></div>
+    <div class="red-circle w-48 h-48 md:w-96 md:h-96 bg-[#FF6B6B] shadow-[0_40px_120px] shadow-[#FF6B6B] rounded-full absolute top-10 right-6 md:right-50 md:top-40 z-5"></div>
 
 
     <!-- INRODUCTION -->
     <section id="home">
-        <div class="intro h-96 w-[85%] flex justify-between mt-50 mx-auto relative border-b z-10 hover:shadow-xl hover:shadow-black-500/50">
-            <div class="intro-image h-96 w-96 z-10 absolute opacity-0 animate-introImage">
+        <div class="intro h-96 w-[85%] flex justify-between mt-50 mx-auto relative md:border-b z-10 hover:shadow-xl hover:shadow-black-500/50">
+            <div class="intro-image h-64 w-64 md:h-96 md:w-96 z-10 absolute opacity-0 animate-introImage">
                 <img src="assets/abhi.png" class="h-full w-full">
             </div> 
     
-            <div class="intro-divider h-96 w-0 border-2 z-10 absolute left-108"></div>
+            <div class="intro-divider h-96 w-0 border-2 z-10 absolute left-108 hidden md:block"></div>
             
-            <div class="intro-description h-96 w-196 z-10 absolute text-3xl left-130 opacity-0 animate-introDescription">
-                Hi, I'm <span class="text-pink-500 text-4xl">Abhinav</span> — a passionate Frontend Developer with a strong interest in Machine Learning and intelligent web experiences.<br>I specialize in building responsive, user-friendly interfaces.<br>I'm also exploring how machine learning can enhance modern web applications — from real-time predictions to smart data visualizations.<br>Currently looking for opportunities where I can contribute, grow, and work with modern technologies in a fast-paced environment.
+            <div class="intro-description h-auto w-128 md:h-96 md:w-196 z-10 text-xl md:text-3xl relative top-64 md:top-0 md:left-130 text-justify opacity-0 animate-introDescription hidden md:block">
+                Hi, I'm <span class="text-pink-500 text-shadow-lg/30 md:text-shadow-none text-4xl">Abhinav</span> — a passionate Frontend Developer with a strong interest in Machine Learning and intelligent web experiences.<br>I specialize in building responsive, user-friendly interfaces.<br>I'm also exploring how machine learning can enhance modern web applications — from real-time predictions to smart data visualizations.<br>Currently looking for opportunities where I can contribute, grow, and work with modern technologies in a fast-paced environment.
+            </div>
+            <div class="intro-description h-auto w-128 md:h-96 md:w-196 z-10 text-xl md:text-3xl relative top-64 md:top-0 md:left-130 text-justify opacity-0 animate-introDescription md:hidden block">
+                Hi, I'm <span class="text-pink-500 text-shadow-lg/30 md:text-shadow-none text-4xl">Abhinav</span> — a passionate <span class="text-2xl"> Frontend Developer</span> focused on building responsive, user-friendly interfaces. Currently exploring how<span class="text-2xl"> Machine Learning</span> can enhance intelligent web experiences and seeking opportunities to grow with modern technologies.
             </div>
         </div>
     </section>
     
     <!-- ABOUT -->
-    <div class="grid justify-items-end pr-20">
+    <div class="grid justify-items-end pr-6 md:pr-20">
         <secion id="about">
-            <div class="about h-128 w-[928px] mt-48 bg-[#33b59f] shadow-[0_10px_30px] shadow-[#33b59f] rounded-full right-20 flex items-center">
-                <div class="about-heading h-18 w-56 p-2 mx-4 text-4xl font-thin bg-white border rounded-full left-4 flex items-center justify-center">ABOUT ME</div>
-                <div class="about-text text-[1.55rem] h-full w-[618px] mt-16">
-                    <div class="text-left">I'm someone who learns by doing — breaking</div>
-                    <div class="w-[660px]"> things, fixing them, and learning fast along the way. <br>My journey into <span class="underline decoration-white underline-offset-4">Frontend Development</span> and <span class="underline decoration-white underline-offset-4">Machine Learning</span> started out of pure curiosity, and it quickly turned</div>
-                    <div class="w-[680px]"> into a full-on obsession with building things that both look great and make sense.<br> Whether it's a clean UI or a smart model running under the hood, I care about the <span class="text-white">WHY</span> behind the code as much as the <span class="text-white">HOW</span>.</div>
-                    <div class="w-[700px]"> Right now, I'm actively looking for roles where I can keep learning, build meaningful products, and be part of a</div>
-                    <div class="w-[660px]"> team that values both innovation and simplicity.</div>
+            <div class="about h-auto w-96 md:h-128 md:w-[928px] py-12 md:py-0 mt-48 bg-[#33b59f] shadow-[0_10px_30px] shadow-[#33b59f] rounded-full right-20 flex flex-col md:flex-row justify-center md:justify-start items-center">
+                <div class="about-heading h-18 w-56 p-2 mx-4 text-4xl font-thin bg-white rounded-full left-4 flex items-center justify-center">ABOUT ME</div>
+                <div class="about-text text-[1.55rem] h-full w-96 md:w-[618px] mt-16 px-2 md:px-0 text-justify md:text-left">
+                    <div class="text-left inline md:block">I'm someone who learns by doing — breaking</div>
+                    <div class="w-96 md:w-[660px] inline md:block"> things, fixing them, and learning fast along the way. <br class="hidden md:block">My journey into <span class="underline decoration-white underline-offset-4"><br class="block md:hidden">Frontend Development</span> and <span class="underline decoration-white underline-offset-4">Machine Learning</span> started out of pure curiosity, and it quickly turned</div>
+                    <div class="w-96 md:w-[680px] inline md:block"> into a full-on obsession with building things that both look great and make sense.<br class="hidden md:block"> Whether it's a clean UI or a smart model running under the hood, I care about the <span class="text-white">WHY</span> behind the code as much as the <span class="text-white">HOW</span>.</div>
+                    <div class="w-96 md:w-[700px] inline md:block"> Right now, I'm actively looking for roles where I can keep learning, build meaningful products, and be part of a</div>
+                    <div class="w-96 md:w-[660px] inline md:block"> team that values <div class="block md:hidden w-56 ml-10"> both innovation and</div> <div class="block md:hidden w-24 ml-16">simplicity.</div></div>
                 </div>
             </div>
         </secion>
@@ -89,22 +93,22 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="scroll-mt-20">
-        <div class="projects h-296 w-4/5 border-t border-b mt-24 mx-auto shadow-xl shadow-black-500">
+        <div class="projects h-auto w-96 md:h-296 md:w-4/5 border-t border-b mt-24 mx-auto shadow-xl shadow-black-500">
             
             <div class="projects-heading text-5xl font-thin w-64 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>PROJECTS</div>
             
             <div class="projects-all h-[90%] mt-4 h-auto">
                 
                 <!-- project-1 -->
-                <div class="project w-2/3 h-84 flex bg-[#FFD93D] rounded-r-full mb-12">
-                    <div class="project-image w-1/3 h-full border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
+                <div class="project h-auto w-96 md:w-2/3 md:h-84 flex flex-col md:flex-row bg-[#FFD93D] rounded-2xl md:rounded-r-full mt-12 md:mt-6 mb-12">
+                    <div class="project-image h-64 w-64 md:w-1/3 md:h-full md:border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
                         <img src="assets/brain-cnn.png" class="w-full ">
                     </div>
-                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
-                        <div class="project-title text-3xl ">Brain-Tumor-Detection-using-CNN</div>
-                        <div class="project-description text-lg my-2 text-justify">This project detects brain tumors using deep learning with convolutional neural networks (CNNs). It involves data preprocessing, model training, evaluation, and prediction on custom MRI images. The system aims to classify MRI scans into tumor and non-tumor categories with high accuracy.
+                    <div class="h-4/5 w-96 md:w-128 my-auto p-2 opacity-0 duration-900" data-animate>
+                        <div class="project-title text-2xl md:text-3xl">Brain-Tumor-Detection-using-CNN</div>
+                        <div class="project-description text-base md:text-lg my-2 text-justify">This project detects brain tumors using deep learning with convolutional neural networks (CNNs). It involves data preprocessing, model training, evaluation, and prediction on custom MRI images. The system aims to classify MRI scans into tumor and non-tumor categories with high accuracy.
                         </div>
-                        <div class="project-tech-stack text-lg my-4">
+                        <div class="project-tech-stack md:text-lg text-base my-4">
                             <span class="bg-white p-2 rounded-full">Python</span>
                             <span class="bg-white p-2 rounded-full">Tensorflow</span>
                             <span class="bg-white p-2 rounded-full">Scikit-learn</span>
@@ -118,12 +122,12 @@
                 </div>
 
                 <!-- project-2 -->
-                <div class="project w-2/3 border border-yellow-500 h-84 flex justify-end bg-[#FFD93D] rounded-l-full mb-12 ml-auto">
-                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
-                        <div class="project-title text-3xl">AudioFakeNet</div>
-                        <div class="project-description text-lg my-2 text-justify">This project uses a CNN to classify speech as bonafide or spoofed based on Mel spectrograms. It processes audio data and trains a deep learning model for detecting audio deepfakes from the ASVspoof 2019 dataset.
+                <div class="project h-auto w-96 md:w-2/3 md:h-84 flex flex-col-reverse md:flex-row justify-end bg-[#FFD93D] rounded-2xl md:rounded-l-full mb-12 md:ml-auto">
+                    <div class="h-4/5 md:w-128 w-96 my-auto p-2 opacity-0 duration-900 " data-animate>
+                        <div class="project-title text-2xl md:text-3xl">AudioFakeNet</div>
+                        <div class="project-description text-base md:text-lg my-2 text-justify">This project uses a CNN to classify speech as bonafide or spoofed based on Mel spectrograms. It processes audio data and trains a deep learning model for detecting audio deepfakes from the ASVspoof 2019 dataset.
                         </div>
-                        <div class="project-tech-stack text-lg my-4">
+                        <div class="project-tech-stack md:text-lg text-base my-4">
                             <span class="bg-white p-2 rounded-full">Tensorflow</span>
                             <span class="bg-white p-2 rounded-full">Librosa</span>
                             <span class="bg-white p-2 rounded-full">Matplotlib</span>
@@ -141,21 +145,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-image w-1/3 h-full border-l flex items-center bg-white -translate-x-225 translate-all duration-900" data-animate>
+                    <div class="project-image h-64 w-64 md:w-1/3 md:h-full md:border-l flex items-center bg-white md:-translate-x-225 md:translate-all md:duration-900" data-animate>
                         <img src="assets/audio.png" class="w-full ">
                     </div>
                 </div>
 
                 <!-- project-3 -->
-                <div class="project w-2/3 h-84 flex bg-[#FFD93D] rounded-r-full mb-12">
-                    <div class="project-image w-1/3 h-full border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
+
+                <div class="project h-auto w-96 md:w-2/3 md:h-84 flex flex-col md:flex-row bg-[#FFD93D] rounded-2xl md:rounded-r-full mt-12 md:mt-6 mb-12">
+                    <div class="project-image h-64 w-64 md:w-1/3 md:h-full md:border-r flex items-center bg-white opacity-0 translate-x-225 translate-all duration-900" data-animate>
                         <img src="assets/spotify.png" class="w-full ">
                     </div>
-                    <div class="h-4/5 w-128 my-auto p-2 opacity-0 duration-900" data-animate>
-                        <div class="project-title text-3xl ">Spotify-Clone</div>
-                        <div class="project-description text-lg my-2 text-justify">A fully responsive Spotify UI clone built with HTML, Tailwind CSS, and JavaScript, replicating key elements like playlists, navigation, and player controls for both desktop and mobile, focusing on clean layout, smooth transitions, and visual accuracy to enhance frontend skills.
+                    <div class="h-4/5 w-96 md:w-128 my-auto p-2 opacity-0 duration-900" data-animate>
+                        <div class="project-title text-2xl md:text-3xl">Spotify-Clone</div>
+                        <div class="project-description text-base md:text-lg my-2 text-justify">A fully responsive Spotify UI clone built with HTML, Tailwind CSS, and JavaScript, replicating key elements like playlists, navigation, and player controls for both desktop and mobile, focusing on clean layout, smooth transitions, and visual accuracy to enhance frontend skills.
                         </div>
-                        <div class="project-tech-stack text-lg my-4">
+                        <div class="project-tech-stack md:text-lg text-base my-4">
                             <span class="bg-white p-2 rounded-full">JavaScript</span>
                             <span class="bg-white p-2 rounded-full">Tailwind CSS</span>
                             <span class="bg-white p-2 rounded-full">HTML</span>
@@ -183,10 +188,10 @@
 
     <!-- SKILLS -->
     <section id="skills" class="scroll-mt-20">
-        <div class="skills h-128 w-4/5 mt-24 mx-auto">
+        <div class="skills h-auto w-96 md:h-128 md:w-4/5 mt-24 mx-auto">
             <div class="skills-heading text-5xl font-thin w-64 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>SKILLS</div>
 
-            <div class="skill-set h-3/4 w-3/4 mt-12 mx-auto grid grid-cols-5 gap-x-2 gap-y-4">
+            <div class="skill-set h-auto w-full md:h-3/4 md:w-3/4 mt-12 mx-auto grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4">
                 <div class="h-32 w-32 mx-auto">
                     <div class="skill h-28 w-28 hover:border-b-4 hover:border-yellow-500 mx-auto cursor-pointer hover:shadow-xl hover:shadow-black-500 flex justify-center items-center">
                         <img src="assets/html-5.png" class="h-24 w-24">
@@ -254,45 +259,47 @@
 
     <!-- CONTACT -->
     <section id="contact" class="scroll-mt-20">
-        <div class="contact h-128 w-348 border-t mx-auto flex justify-center items-center">
-            <div class="contact-links h-96 w-96 rounded-full flex justify-center items-center mr-32 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb]">
-                <div class="contact-heading text-5xl font-thin h-12 pl-28 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>CONTACT</div>
+        <div class="contact h-196 w-96 md:h-128 md:w-348 md:border-t mt-12 md:mt-0 mx-auto md:flex md:justify-center md:items-center ">
+            <div class="contact-links h-12 w-48 mx-auto md:mx-0 md:h-96 md:w-96 md:rounded-full rounded-xl md:flex justify-center items-center md:mr-32 md:bg-[#FF57BB] md:shadow-[0_10px_30px] md:shadow-[#ff57bb]">
+                <div class="contact-heading text-5xl font-thin md:h-12 md:pl-28 text-center mx-auto underline decoration-2 underline-offset-6 opacity-0 translate-y-10 transition-all duration-700 " data-animate>CONTACT</div>
                 <a href="https://www.linkedin.com/in/kalyanam-abhinav-642194274/" target="_blank">
-                    <div class="contact-linkedin h-18 w-18 rounded-full relative bottom-26 left-34 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                    <div class="contact-linkedin h-16 w-16 md:h-18 md:w-18 rounded-full top-2 md:top-auto relative md:bottom-26 md:left-34 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
                         <img src="assets/linkedin.png" class="h-12 w-12">
                     </div>
                 </a>
                 <a href="https://github.com/kalyanam17abhinav" target="_blank">
-                    <div class="contact-linkedin h-18 w-18 rounded-full relative left-24 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                    <div class="contact-linkedin h-16 w-16 md:h-18 md:w-18 rounded-full relative -top-14 md:top-auto left-18 md:left-24 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
                         <img src="assets/github.png" class="h-12 w-12">
                     </div>
                 </a>
                 <a href="mailto:robert7grey@gmail.com" target="_blank">
-                    <div class="contact-email h-18 w-18 rounded-full relative top-26 -left-2 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
+                    <div class="contact-email h-16 w-16 md:h-18 md:w-18 rounded-full relative left-36 -top-30 md:top-26 md:-left-2 bg-[#FF57BB] shadow-[0_10px_30px] shadow-[#ff57bb] flex justify-center items-center cursor-pointer hover:scale-[1.05]">
                         <img src="assets/email.png" class="h-12 w-12">
                     </div>
                 </a>
                 
             </div>
-            <div class="contact-form border-l h-128 w-220">
-                <div class="contact-lets-connect-title h-12 w-full pl-12 text-2xl font-semibold ">let's connect</div>
-                <div class="contact-name h-12 w-1/2 pl-12 my-8 font-thin text-xl">
-                    Name: <input type="text" id="name" class="border-b focus:outline-none ml-4 pl-2">
+            <div class="contact-form border md:border-0 md:border-l h-144 md:h-128 md:w-220 mt-32 rounded-lg md:rounded-none">
+                <div class="contact-lets-connect-title h-auto md:h-12 md:w-full pl-4 md:pl-12 text-2xl font-semibold mt-12 md:mt-0 bg-[#FF57BB] md:bg-white text-white md:text-black">let's connect</div>
+                <div class="contact-name h-12 w-1/2 pl-4 md:pl-12 my-8 font-thin text-xl flex">
+                    <div>Name: </div><input type="text" id="name" class="border-b focus:outline-none ml-4 pl-2">
                 </div>
-                <div class="contact-email h-12 w-2/3 pl-12 my-8 font-thin text-xl">
-                    Email: <input type="email" id="email" class="border-b focus:outline-none focus:ring-0 ml-4 pl-2">
+                <div class="contact-email h-12 w-1/2 pl-4 md:pl-12 my-8 font-thin text-xl flex">
+                    <div>Email: </div><input type="email" id="email" class="border-b focus:outline-none focus:ring-0 ml-4 pl-2">
                 </div>
 
-                <div class="contact-message h-12 w-2/3 pl-12 font-thin text-xl">
-                    Message: <textarea id="message" rows="5" class="w-full p-4 border rounded resize-none focus:outline-none" wrap="soft"></textarea>
+                <div class="contact-message h-48 w-screen md:w-1/2 pl-4 md:pl-12 font-thin text-xl flex flex-col md:block ">
+                    Message: <textarea id="message" rows="5" class="h-40 md:h-40 w-5/6 md:w-full md:p-4 border rounded resize-none focus:outline-none" wrap="soft"></textarea>
                 </div>
                 
-                <div class="contact-submit h-12 w-2/3 pl-12 my-8 relative top-34">
-                    <button class="h-12 w-18 bg-[#00C9A7] rounded-xl text-2xl font-thin right-0 hover:font-semibold cursor-pointer">Send</button>
+                <div class="contact-submit h-12 w-2/3 pl-4 md:pl-12 my-8 ">
+                    <button class="h-12 w-18 bg-[#00C9A7] rounded-xl text-2xl font-thin right-0 hover:font-semibold hover:bg-[#04bfa0] cursor-pointer">Send</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="gray h-12 w-auto bg-gray-500 mt-6 md:mt-24"></div>
     
      <script src="script.js"></script>
 </body>

@@ -2,55 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rotating Parent</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <style>
-    .parent {
-      width: 200px;
-      height: 200px;
-      background-color: lightblue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: rotate 5s linear infinite;
-      margin: 100px auto;
-    }
-
-    .child {
-      width: 50px;
-      height: 50px;
-      background-color: darkblue;
-      animation: counter-rotate 5s linear infinite;
-    }
-
-    @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    
-    @keyframes counter-rotate {
-      from {
-        transform: rotate(360deg);
-      }
-      to {
-        transform: rotate(0deg);
-      }
-    }
-  </style>
 </head>
-<body>
-  <div class="w-64 h-64 bg-[#33b59f] rounded-full flex items-center justify-center text-center p-6 overflow-hidden">
-    <p class="text-white text-lg leading-snug">
-      This is a circular area with text that wraps neatly and fills the space without overflowing. The content stays within the rounded edges.
-      This is a circular area with text that wraps neatly and fills the space without overflowing. The content stays within the rounded edges.
-    </p>
-  </div>
-  
+<body class="min-h-screen">
+  <nav class="fixed top-0 left-0 w-full h-16 bg-white z-50 flex items-center justify-between p-4">
+    <span>Logo</span>
+    <span>Menu</span>
+  </nav>
+
+  <main class="mt-16 p-4">
+    <p>Scroll down content</p>
+    <div class="h-[2000px]"></div>
+  </main>
 </body>
+
 </html>
